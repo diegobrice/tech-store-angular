@@ -1,0 +1,30 @@
+<!-- <h2>Contador: {{ entrada }}</h2>
+
+<div *ngIf="entrada > 0">Es un numero positivo</div>
+<div *ngIf="entrada == 0">Es un numero cero</div>
+<div *ngIf="entrada < 0">Es un numero negativo</div> -->
+
+<!-- operador condicional utilizando una vista o template  -->
+<!-- <div *ngIf="entrada > 0; then positivo; else negativo"></div>
+<ng-template #positivo> Numero Positivo </ng-template>
+<ng-template #negativo> Numero Negativo </ng-template> -->
+
+<form (submit)="addItem()">
+  <input type="text" [(ngModel)]="newItem" name="title" />
+  <input type="submit" value="Add" />
+</form>
+
+<p *ngIf="items.length === 0">Lista vacia</p>
+<ul>
+  <li *ngFor="let item of items; index as i">
+    {{ i }}: {{ item }}
+    <button (click)="deleteItem(i)">Delete</button>
+  </li>
+</ul>
+
+<div [ngSwitch]="newItem">
+  <p *ngSwitchCase="'1'">Laptop</p>
+  <p *ngSwitchCase="'String'">Celular</p>
+  <p *ngSwitchCase="3">PC</p>
+  <p *ngSwitchDefault>Sin match</p>
+</div>
