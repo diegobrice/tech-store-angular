@@ -1,0 +1,46 @@
+:host {
+  padding: 20px;
+  background-color: #ddd;
+  box-shadow: 0 3px 3px #ccc;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+
+// .product__item {
+//   padding: 20px;
+//   background-color: #ddd;
+//   box-shadow: 0 3px 3px #ccc;
+//   text-align: center;
+// }
+
+.product__img {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+
+  & img {
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: contain;
+  }
+}
+
+.product__info {
+
+  h2 {
+    margin: 10px 0;
+  }
+
+  button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+  }
+
+}

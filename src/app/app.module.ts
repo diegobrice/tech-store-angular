@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ContadorComponent } from './contador/contador.component';
+import { ProductComponent } from './components/product.component';
 
 @NgModule({
-  declarations: [AppComponent, ContadorComponent],
+  declarations: [AppComponent, ContadorComponent, ProductComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

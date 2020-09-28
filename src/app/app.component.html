@@ -6,15 +6,11 @@
   <div *ngIf="products.length === 0">
     <h3>No hay productos disponibles</h3>
   </div>
-  <div class="product__item" *ngFor="let product of products; index as i">
-    <div class="product__img">
-      <img [src]="product.image" alt="" />
-    </div>
-    <div class="product__info">
-      <h2>{{ product.title }}</h2>
-      <p>{{ product.description }}</p>
-      <p>{{ product.price }}</p>
-      <button (click)="deleteProduct(i)">Eliminar</button>
-    </div>
-  </div>
+
+  <app-product
+    *ngFor="let product of products"
+    [product]="product"
+    (productClicked)="clickProduct($event)"
+  >
+  </app-product>
 </div>

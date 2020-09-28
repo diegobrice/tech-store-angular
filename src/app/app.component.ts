@@ -52,7 +52,11 @@ export class AppComponent {
     },
   ];
 
-  deleteProduct(index) {
-    this.products.splice(index, 1);
+  // deleteProduct(index) {
+  //   this.products.splice(index, 1);
+  // }
+
+  clickProduct(nombreProducto: string) {
+    console.log(nombreProducto);
   }
 }
