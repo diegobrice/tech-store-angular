@@ -1,0 +1,8 @@
+<div class="product__img">
+  <img [src]="product.image" alt="" />
+</div>
+<div class="product__info">
+  <h2>{{ product.title | uppercase }}</h2>
+  <p>{{ product.description }}</p>
+  <p>{{ product.price | currency: "S/" }}</p>
+</div>

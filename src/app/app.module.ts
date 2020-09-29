@@ -20,6 +20,9 @@ import { ExpPipe } from './pipes/exp.pipe';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { LayoutComponent } from './components/layout/layout.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -37,6 +40,9 @@ registerLocaleData(localeEs);
     HeaderComponent,
     FooterComponent,
     BannerComponent,
+    NotfoundComponent,
+    ProductDetailComponent,
+    LayoutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [{ provide: LOCALE_ID, useValue: 'es' }],

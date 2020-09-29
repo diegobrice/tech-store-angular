@@ -1,0 +1,13 @@
+.product__img {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+
+  & img {
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: contain;
+  }
+}

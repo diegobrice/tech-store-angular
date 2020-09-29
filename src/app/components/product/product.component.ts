@@ -22,9 +22,7 @@ export class ProductComponent {
 
   today = new Date();
 
-  constructor() {
-    console.log('constructor');
-  }
+  constructor() {}
 
   // ngOnChanges(changes: SimpleChanges) {
   //   console.log('onChanges');
@@ -43,7 +41,7 @@ export class ProductComponent {
   //   console.log('onDestroy');
   // }
 
-  addCart() {
+  addCart(): void {
     this.productClicked.emit(this.product.title);
   }
 }
