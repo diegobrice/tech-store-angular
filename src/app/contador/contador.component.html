@@ -9,6 +9,11 @@
 <ng-template #positivo> Numero Positivo </ng-template>
 <ng-template #negativo> Numero Negativo </ng-template> -->
 
+<input type="text" [(ngModel)]="power" />
+<input type="text" [(ngModel)]="exp" />
+<p>{{ power | exponential }}</p>
+<p>{{ power | exp: exp }}</p>
+
 <form (submit)="addItem()">
   <input type="text" [(ngModel)]="newItem" name="title" />
   <input type="submit" value="Add" />

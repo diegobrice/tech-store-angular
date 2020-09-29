@@ -11,6 +11,8 @@ export class ContadorComponent implements OnInit {
 
   newItem = '';
   items = ['laptop', 'cel', 'watch', 'tablet'];
+  power = 10;
+  exp = 2;
 
   addItem() {
     this.items.push(this.newItem);

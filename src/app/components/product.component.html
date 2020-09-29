@@ -3,10 +3,13 @@
   <img [src]="product.image" alt="" />
 </div>
 <div class="product__info">
-  <h2>{{ product.title }}</h2>
-  <p>{{ product.description }}</p>
-  <p>{{ product.price }}</p>
+  <h2 appHighlight>{{ product.title | uppercase }}</h2>
+  <p>{{ product.description | slice: 0:10 }}</p>
+  <p>{{ product.price | currency: "S/" }}</p>
+  <p>{{ today | date: "mediumDate" }}</p>
   <!-- <button (click)="deleteProduct(i)">Eliminar</button> -->
-  <button (click)="addCart()">Agregar al carrito</button>
+  <button appCircular [backgroundColor]="'blue'" (click)="addCart()">
+    Agregar
+  </button>
 </div>
 <!-- </div> -->
