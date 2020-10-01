@@ -6,15 +6,6 @@
   border-radius: 8px;
 }
 
-
-
-// .product__item {
-//   padding: 20px;
-//   background-color: #ddd;
-//   box-shadow: 0 3px 3px #ccc;
-//   text-align: center;
-// }
-
 .product__img {
   background-color: #fff;
   padding: 20px;
@@ -30,17 +21,11 @@
 }
 
 .product__info {
-
   h2 {
     margin: 10px 0;
   }
 
-  button {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: transparent;
-    border: 1px solid blueviolet;
-    cursor: pointer;
+  a {
+    margin-right: 6px;
   }
-
 }

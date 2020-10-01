@@ -9,9 +9,12 @@
   <p>{{ today | date: "mediumDate" }}</p>
   <!-- <button (click)="deleteProduct(i)">Eliminar</button> -->
   <!-- <a [routerLink]="['/productos/', product.id]">View Detail</a> -->
-  <a routerLink="/productos/{{ product.id }}">View Detail</a>
-  <button appCircular [backgroundColor]="'blue'" (click)="addCart()">
-    Agregar
-  </button>
+  <a mat-raised-button color="accent" routerLink="/productos/{{ product.id }}"
+    >View Detail</a
+  >
+
+  <!-- appCircular
+    [backgroundColor]="'blue'" -->
+  <button mat-raised-button color="primary" (click)="addCart()">Agregar</button>
 </div>
 <!-- </div> -->

@@ -14,6 +14,8 @@ import { LayoutComponent } from './components/layout/layout.component';
 
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './components/material/material.module';
 
 import { LOCALE_ID } from '@angular/core';
 import localeEs from '@angular/common/locales/es';
@@ -37,6 +39,8 @@ registerLocaleData(localeEs);
     FormsModule,
     SharedModule,
     CoreModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'es' }],
   bootstrap: [AppComponent],
