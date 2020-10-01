@@ -1,4 +1,4 @@
-<!-- <div class="product__item"> -->
+<!-- <div class="product__item">
 <div class="product__img">
   <img [src]="product.image" alt="" />
 </div>
@@ -7,14 +7,41 @@
   <p>{{ product.description | slice: 0:10 }}</p>
   <p>{{ product.price | currency: "S/" }}</p>
   <p>{{ today | date: "mediumDate" }}</p>
-  <!-- <button (click)="deleteProduct(i)">Eliminar</button> -->
-  <!-- <a [routerLink]="['/productos/', product.id]">View Detail</a> -->
+  <button (click)="deleteProduct(i)">Eliminar</button>
+  <a [routerLink]="['/productos/', product.id]">View Detail</a>
   <a mat-raised-button color="accent" routerLink="/productos/{{ product.id }}"
     >View Detail</a
   >
 
-  <!-- appCircular
-    [backgroundColor]="'blue'" -->
+  appCircular
+    [backgroundColor]="'blue'"
   <button mat-raised-button color="primary" (click)="addCart()">Agregar</button>
 </div>
-<!-- </div> -->
+</div> -->
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ product.title }}</mat-card-title>
+    <mat-card-subtitle>{{ product.price | currency: "S/" }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    [src]="product.image"
+    [alt]="product.title"
+    class="card-img"
+  />
+  <mat-card-content>
+    <p>
+      {{ product.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button color="accent" routerLink="/productos/{{ product.id }}"
+      >Ver Detalle</a
+    >
+    <button mat-button color="primary" (click)="addCart()">
+      Agregar al carrito
+    </button>
+  </mat-card-actions>
+</mat-card>

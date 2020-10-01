@@ -23,6 +23,11 @@ const routes: Routes = [
       { path: 'contacto', component: ContactComponent },
     ],
   },
+  {
+    path: 'admin',
+    loadChildren: () =>
+      import('./components/admin/admin.module').then((m) => m.AdminModule),
+  },
   { path: 'contador', component: ContadorComponent },
   { path: '**', component: NotfoundComponent },
 ];

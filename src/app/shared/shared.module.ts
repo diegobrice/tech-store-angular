@@ -8,6 +8,7 @@ import { ExponentialPipe } from './pipes/exponential.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
 import { CircularDirective } from './directives/circular.directive';
 import { ExpPipe } from './pipes/exp.pipe';
+import { MaterialModule } from '../components/material/material.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { ExpPipe } from './pipes/exp.pipe';
     CircularDirective,
     ExpPipe,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, MaterialModule],
   exports: [
     HeaderComponent,
     FooterComponent,
