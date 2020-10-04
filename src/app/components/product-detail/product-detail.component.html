@@ -1,8 +1,22 @@
-<div class="product__img">
+<div *ngIf="product">
+  <div class="product__img">
+    <img [src]="product.image" alt="" />
+  </div>
+  <div class="product__info">
+    <h2>{{ product.title | uppercase }}</h2>
+    <p>{{ product.description }}</p>
+    <p>{{ product.price | currency: "S/" }}</p>
+  </div>
+  <button (click)="createProduct()">Crear</button>
+  <button (click)="updateProduct()">Update</button>
+  <button (click)="deleteProduct(product.id)">delete</button>
+</div>
+
+<!-- <div class="product__img">
   <img [src]="product?.image" alt="" />
 </div>
 <div class="product__info">
   <h2>{{ product?.title | uppercase }}</h2>
   <p>{{ product?.description }}</p>
   <p>{{ product?.price | currency: "S/" }}</p>
-</div>
+</div> -->
