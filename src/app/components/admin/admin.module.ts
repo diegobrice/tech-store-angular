@@ -13,9 +13,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { FormProductComponent } from './components/form-product/form-product.component';
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, ProductListComponent],
+  declarations: [ProductFormComponent, NavComponent, ProductListComponent, FormProductComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,

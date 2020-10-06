@@ -1,1 +1,22 @@
-<p>footer works!</p>
+<div>
+  <h3>Contacto</h3>
+  <mat-form-field appearance="standard">
+    <mat-label>Nombre</mat-label>
+    <input matInput />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Correo electronico</mat-label>
+    <input
+      matInput
+      placeholder="micorreo@example.com"
+      [formControl]="email"
+      required
+    />
+    <!-- <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error> -->
+  </mat-form-field>
+
+  <input [formControl]="emailField" type="text" name="" id="" />
+  {{ emailField.valid }}
+  <button [disabled]="emailField.invalid" (click)="sendMail()">Enviar</button>
+</div>
