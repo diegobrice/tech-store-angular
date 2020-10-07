@@ -14,9 +14,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { FormProductComponent } from './components/form-product/form-product.component';
+import { EditProductComponent } from './components/edit-product/edit-product.component';
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, ProductListComponent, FormProductComponent],
+  declarations: [ProductFormComponent, NavComponent, ProductListComponent, FormProductComponent, EditProductComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
