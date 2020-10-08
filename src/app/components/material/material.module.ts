@@ -11,6 +11,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatStepperModule } from '@angular/material/stepper';
 
 @NgModule({
   declarations: [],
@@ -26,6 +27,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatRadioModule,
     MatTableModule,
     MatFormFieldModule,
+    MatStepperModule,
   ],
   exports: [
     MatButtonModule,
@@ -38,6 +40,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatRadioModule,
     MatTableModule,
     MatFormFieldModule,
+    MatStepperModule,
   ],
 })
 export class MaterialModule {}

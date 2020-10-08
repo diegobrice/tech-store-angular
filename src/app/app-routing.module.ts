@@ -6,6 +6,7 @@ import { ContadorComponent } from './components/contador/contador.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { OrderComponent } from './components/order/order.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
       },
       { path: 'productos', component: ProductsComponent },
       { path: 'productos/:id', component: ProductDetailComponent },
+      { path: 'order', component: OrderComponent },
       { path: 'contacto', component: ContactComponent },
     ],
   },

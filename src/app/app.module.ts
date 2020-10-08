@@ -22,6 +22,7 @@ import { LOCALE_ID } from '@angular/core';
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { LayoutModule } from '@angular/cdk/layout';
+import { OrderComponent } from './components/order/order.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -34,6 +35,7 @@ registerLocaleData(localeEs);
     NotfoundComponent,
     ProductDetailComponent,
     LayoutComponent,
+    OrderComponent,
   ],
   imports: [
     BrowserModule,
